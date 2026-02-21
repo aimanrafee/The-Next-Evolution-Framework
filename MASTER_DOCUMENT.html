@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE NEXT EVOLUTION | Sovereign Master Document 2050</title>
+    <style>
+        /* CSS UNTUK PRINT & PDF */
+        :root {
+            --primary-black: #000000;
+            --sovereign-gold: #c5a059;
+            --text-gray: #333333;
+            --line-color: #e0e0e0;
+        }
+
+        @media print {
+            .no-print { display: none; }
+            body { background: white !important; color: black !important; }
+            .page-break { page-break-before: always; }
+            @page { margin: 2cm; }
+        }
+
+        body {
+            font-family: 'Times New Roman', serif;
+            line-height: 1.6;
+            color: var(--text-gray);
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+
+        .container {
+            width: 210mm; /* A4 Width */
+            margin: auto;
+            background: white;
+            padding: 40px 60px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* FRONT PAGE */
+        .front-page {
+            height: 297mm; /* A4 Height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: 5px double var(--sovereign-gold);
+            margin-bottom: 50px;
+        }
+
+        .front-page h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            letter-spacing: 5px;
+            color: var(--primary-black);
+        }
+
+        .front-page h2 {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            color: var(--sovereign-gold);
+            margin-bottom: 100px;
+        }
+
+        .founder-name {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 50px;
+        }
+
+        /* TOC */
+        .toc-section {
+            min-height: 250mm;
+        }
+
+        .toc-section h2 { border-bottom: 2px solid var(--primary-black); }
+
+        .toc-list { list-style: none; padding: 0; }
+        .toc-list li {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dotted var(--line-color);
+            margin-bottom: 10px;
+        }
+
+        /* CHAPTERS */
+        .chapter-title {
+            text-align: center;
+            padding-top: 100px;
+            font-size: 2.5rem;
+            color: var(--primary-black);
+            text-transform: uppercase;
+        }
+
+        .content-body { font-size: 1.1rem; text-align: justify; }
+
+        /* FOOTNOTES */
+        .footnote {
+            font-size: 0.8rem;
+            border-top: 1px solid var(--line-color);
+            margin-top: 20px;
+            color: #666;
+        }
+
+        /* QR CODE */
+        .qr-section {
+            text-align: center;
+            padding: 50px;
+            border: 2px solid var(--primary-black);
+        }
+
+        .qr-placeholder {
+            width: 150px;
+            height: 150px;
+            background: #000;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.7rem;
+        }
+
+        /* PRINT BUTTON */
+        .print-btn-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+
+        .print-btn {
+            background: #00ff41;
+            color: black;
+            padding: 15px 30px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+
+<div class="print-btn-container no-print">
+    <button class="print-btn" onclick="window.print()">CETAK KEPADA PDF (GOLD MASTER)</button>
+</div>
+
+<div class="container">
+    
+    <div class="front-page">
+        <h2>Sovereign Protocol - 2050.1 Stable</h2>
+        <h1>THE NEXT EVOLUTION</h1>
+        <p>Framework of Intelligence Sovereignty Post-Information Era</p>
+        <div class="founder-name">ARCHITECTED BY: GLOBAL 2050 FOUNDER</div>
+        <p>Status: GOLD MASTER STANDARD</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="toc-section">
+        <h2>ISI KANDUNGAN</h2>
+        <ul class="toc-list">
+            <li><span>01. Pengenalan & Manifesto</span> <span>01</span></li>
+            <li><span>02. Dimensi 01: The Axioms</span> <span>03</span></li>
+            <li><span>03. Dimensi 02: Economic Architecture</span> <span>07</span></li>
+            <li><span>04. Dimensi 03: Social Physics</span> <span>12</span></li>
+            <li><span>05. Dimensi 04: Mechanical Realism</span> <span>18</span></li>
+            <li><span>06. Dimensi 05: The Synthesis</span> <span>25</span></li>
+            <li><span>07. Technical Stack & Deployment</span> <span>30</span></li>
+            <li><span>08. Glosari & Index</span> <span>35</span></li>
+        </ul>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="chapter-title">DIMENSI 01: THE AXIOMS</div>
+    <div class="content-body">
+        <h3>Hukum Asal & Logik Realiti</h3>
+        <p>Evolusi daripada Bit (B) kepada Intelligence (I) adalah satu kepastian sejarah. Dalam era 2050, kita menyedari bahawa kedaulatan bukan lagi soal memiliki data, tetapi memiliki logik yang memproses data tersebut secara mandiri (Stand-alone).</p>
+        
+        <blockquote>"The Glitch is not an error; it is the system's way of purging the inefficient."</blockquote>
+
+        <div class="footnote">
+            Nota 1: G-F-B-I merujuk kepada Gold, Fiat, Bitcoin, Intelligence.
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="chapter-title">DIMENSI 04: MECHANICAL REALISM</div>
+    <div class="content-body">
+        <h3>Kedaulatan Perkakasan (MVH)</h3>
+        <p>Sistem unggul mestilah beroperasi pada Pentium G4560 atau setaraf. Tanpa kedaulatan perkakasan, kedaulatan perisian adalah ilusi. Pengguna wajib memiliki akses fizikal dan kawalan penuh ke atas nod mereka.</p>
+        
+        <p>Kod Utama (main.js) mengaktifkan <em>Offline Smartest Algorithm</em> yang menjamin keselamatan data dalam <em>Sovereign Vault</em>.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="chapter-title">GLOSARI & INDEX</div>
+    <div class="content-body">
+        <dl>
+            <dt><strong>The Glitch</strong></dt>
+            <dd>Fasa kegagalan sistemik grid maklumat global.</dd>
+            <dt><strong>MVH</strong></dt>
+            <dd>Minimum Viable Hardware (Spesifikasi minimum kedaulatan).</dd>
+            <dt><strong>OSA</strong></dt>
+            <dd>Offline Smartest Algorithm (Algoritma pemprosesan mandiri).</dd>
+            <dt><strong>SIC</strong></dt>
+            <dd>Sovereign Intellectual Covenant (Protokol lesen kedaulatan).</dd>
+        </dl>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="chapter-title">HUBUNGI R&D</div>
+    <div class="qr-section">
+        <p>Imbas QR Code di bawah untuk akses terus ke <strong>Channel Research and Development System Resource and Foundation</strong>.</p>
+        
+        <div class="qr-placeholder">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://github.com/YourRepo/RND_Foundation" alt="QR Code">
+        </div>
+        
+        <p><strong>SECURITY KEY:</strong> GLOBAL-2050-INTEGRITY-SIG</p>
+        <p style="font-size: 0.8rem; color: #888;">Dokumen ini adalah harta intelek Global 2050 Founder. Sebarang penyalinan tanpa mematuhi protokol SIC adalah de-validasi integriti pengguna.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
