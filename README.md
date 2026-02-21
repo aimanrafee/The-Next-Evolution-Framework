@@ -1,5 +1,6 @@
 # 🌐 THE NEXT EVOLUTION: THE "I" PROTOCOL
 **The Master Framework for Post-Information Age Sovereignty**
+**Status:** `GOLD MASTER STANDARD` | **Version:** `2050.1-STABLE`
 
 > *"Evolution is not a choice; it is the inevitable response of Logic to the exhaustion of Systems."*
 
@@ -13,56 +14,53 @@ Sistem dunia konvensional telah mencapai tahap **Entropi Maksimum**. Daripada sa
 
 ---
 
-## 🧩 STRUKTUR FRAMEWORK (THE 5 DIMENSIONS)
+## 🧩 STRUKTUR EKOSISTEM (GOLD MASTER COMPONENTS)
 
-Repository ini disusun secara modular untuk membina kedaulatan dari peringkat akar umbi (Hardware) sehingga ke puncak tamadun (Synthesis):
+Repository ini telah mencapai standard penuh yang merangkumi empat tunjang utama kedaulatan digital:
 
-### 1. [⚖️ 01_The_Axioms](./01_The_Axioms/)
-**Hukum Asal & Logik Realiti.** Membedah teori transisi G-F-B-I dan mekanika perpindahan kuasa (*Conservation of Power*). Dasar bagi setiap keputusan strategik 2050.
+### 1. 📑 INFRASTRUKTUR LOGIK (AXIOMS TO SYNTHESIS)
+Navigasi merentas lima dimensi pembangunan tamadun:
+* [⚖️ **01_The_Axioms**](./01_The_Axioms/): Dasar logik G-F-B-I dan mekanika perpindahan kuasa.
+* [📈 **02_Economic_Architecture**](./02_Economic_Architecture/): Ekonomi berasaskan *Intelligence Collateral* dan RWA Bridge.
+* [👤 **03_Social_Physics**](./03_Social_Physics/): Protokol individu berdaulat dan etika dinyahpusat (ES-RFS).
+* [⚙️ **04_Mechanical_Realism**](./04_Mechanical_Realism/): Penegasan *Minimum Viable Hardware* dan *Offline-First*.
+* [🌌 **05_The_Synthesis**](./05_The_Synthesis/): Visi *Global Equilibrium* dan era pasca-AI.
 
-### 2. [📈 02_Economic_Architecture](./02_Economic_Architecture/)
-**Sovereign Economics.** Evolusi daripada ekonomi kelangkaan kepada *Post-Scarcity Logic*. Memperkenalkan *Intelligence Collateral* dan jambatan aset dunia nyata (RWA).
+### 💻 2. KOD SUMBER APLIKASI (OSA ENGINE)
+Aplikasi teras yang membolehkan kedaulatan di peringkat peranti:
+* [**index.html**](./index.html): Dashboard Antara Muka Kedaulatan (Sovereign UI).
+* [**style.css**](./style.css): Penggayaan *Cyber-Sovereign* berprestasi tinggi.
+* [**script.js**](./script.js): Logik interaktif Terminal Kedaulatan.
+* [**main.js**](./main.js): **Offline Smartest Algorithm (OSA)** - Jantung pemprosesan data mandiri.
+* [**test_integrity.js**](./test_integrity.js): Unit ujian ketahanan sistem terhadap simulasi "The Glitch".
 
-### 3. [👤 03_Social_Physics](./03_Social_Physics/)
-**Politik Individu & Legacy.** Protokol untuk *Sovereign Individual*, etika dinyahpusat (*Ethical Algo*), dan mekanisme pewarisan kedaulatan merentas generasi.
+### 🚀 3. PROTOKOL AUTOMASI (DEPLOYMENT)
+* [**deploy.sh**](./deploy.sh): Skrip automasi profesional untuk pemasangan pantas ke peranti MVH (Pentium G4560 Compliance). Merangkumi pengesahan fail dan penguncian keizinan (permissions).
 
-### 4. [⚙️ 04_Mechanical_Realism](./04_Mechanical_Realism/)
-**Kedaulatan Perkakasan.** Dokumen teknikal mengenai *Minimum Viable Hardware* (MVH) dan protokol *Offline-First Security*. Memastikan sistem anda kebal daripada kegagalan grid.
-
-### 5. [🌌 05_The_Synthesis](./05_The_Synthesis/)
-**Visi Global Equilibrium.** Konvergensi terakhir sistem menuju tahun 2050. Masa hadapan di mana logik menjadi standard tamadun baru.
+### 📘 4. DOKUMENTASI KEJURUTERAAN & PENGGUNA
+* [🛠️ **README_TECHNICAL.md**](./README_TECHNICAL.md): Spesifikasi teknikal, keperluan MVH, dan prosedur pelancaran *offline* bagi rakan strategik.
+* [📖 **User_Manual.md**](./User_Manual.md): Panduan operasi pengguna akhir untuk mengendalikan Sovereign Node dalam fasa kecemasan.
 
 ---
 
 ## 📂 DOKUMEN EKSEKUTIF UTAMA
 
-Untuk pemikir strategik dan rakan kongsi, sila rujuk dokumen kritikal berikut:
-* 📜 **[LICENSE.md](./LICENSE.md)**: Protokol Perlindungan Kedaulatan Intelek (SIC).
-* 💼 **[FOUNDERS_BRIEFING.md](./FOUNDERS_BRIEFING.md)**: Ringkasan eksekutif dan roadmap strategik untuk rakan sinergi.
-
----
-
-## 🧭 TUJUAN REPOSITORY INI
-Repository ini adalah **Standard Rizab Intelektual** bagi:
-* **Founder & Architect System**: Membina aplikasi dan OS mandiri (Stand-alone).
-* **Strategis Ekonomi**: Mengurus aset RWA tanpa risiko inflasi sistem Fiat.
-* **Individu Berdaulat**: Mengekalkan identiti dan kekayaan yang tidak boleh dipadam oleh pihak ketiga.
+* 📜 [**LICENSE.md**](./LICENSE.md): Protokol Perlindungan Kedaulatan Intelek (SIC).
+* 💼 [**FOUNDERS_BRIEFING.md**](./FOUNDERS_BRIEFING.md): Ringkasan eksekutif dan visi roadmap 2050.
 
 ---
 
 ## 🛠️ SPESIFIKASI OPERASI MINIMUM
-Sistem ini direka untuk ketahanan maksimum. Framework ini disahkan berjalan secara optimum pada:
+Sistem GOLD MASTER ini disahkan berjalan secara optimum pada:
 * **Compute**: Pentium-class architecture (e.g., G4560).
 * **Network**: Offline-first / Local Mesh Networks.
-* **Integrity**: ES-RFS Ethical Algorithm.
+* **Security**: Local Sovereign Vault (LocalStorage Encryption).
 
 ---
 
-## ⚖️ PROTOKOL PENGGUNAAN
-Kandungan ini dilindungi di bawah **Sovereign Intellectual Covenant (SIC)**. Ia bersifat **Terbuka namun Berdaulat**. Anda diizinkan untuk mengguna dan menyebar, namun dilarang keras untuk mensentralisasikan logik ini bagi tujuan penindasan atau manipulasi institusi.
+## ⚖️ PROTOKOL PENGGUNAAN (SIC)
+Kandungan ini dilindungi di bawah **Sovereign Intellectual Covenant (SIC)**. Ia bersifat **Terbuka namun Berdaulat**. Penggunaan sistem ini menandakan persetujuan anda untuk menjaga integriti logik dan tidak mensentralisasikan kuasa bagi tujuan penindasan.
 
 ---
 **Architected by Global 2050 Founder.**
-*Built for the transition. Guarding the Logic. Securing the Future.*
-
----
+*Gold Master Deployment Ready. Guarding the Logic. Securing the Future.*
