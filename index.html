@@ -3,200 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>THE NEXT EVOLUTION | Sovereign Dashboard 2050</title>
-    <style>
-        :root {
-            --bg-color: #0a0a0a;
-            --text-color: #e0e0e0;
-            --accent-color: #00ff41; /* Matrix/Terminal Green */
-            --secondary-accent: #008f11;
-            --border-style: 1px solid var(--secondary-accent);
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            font-family: 'Courier New', Courier, monospace;
-            margin: 0;
-            padding: 20px;
-            line-height: 1.6;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        header {
-            width: 100%;
-            max-width: 900px;
-            border-bottom: var(--border-style);
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        .glitch-title {
-            font-size: 2.5em;
-            color: var(--accent-color);
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            margin: 0;
-        }
-
-        .status-bar {
-            font-size: 0.8em;
-            color: var(--secondary-accent);
-            margin-top: 10px;
-        }
-
-        main {
-            width: 100%;
-            max-width: 900px;
-        }
-
-        .manifesto-box {
-            border: var(--border-style);
-            padding: 20px;
-            background: rgba(0, 255, 65, 0.05);
-            margin-bottom: 30px;
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
-
-        .directory-card {
-            border: var(--border-style);
-            padding: 15px;
-            transition: 0.3s;
-            cursor: pointer;
-        }
-
-        .directory-card:hover {
-            background: var(--accent-color);
-            color: var(--bg-color);
-        }
-
-        .directory-card h3 {
-            margin-top: 0;
-            border-bottom: 1px solid currentColor;
-        }
-
-        .file-list {
-            list-style: none;
-            padding: 0;
-            font-size: 0.9em;
-        }
-
-        .file-list li::before {
-            content: "> ";
-        }
-
-        footer {
-            margin-top: 50px;
-            border-top: var(--border-style);
-            width: 100%;
-            max-width: 900px;
-            text-align: center;
-            padding-top: 20px;
-            font-size: 0.7em;
-            color: var(--secondary-accent);
-        }
-
-        .terminal-input {
-            background: transparent;
-            border: none;
-            color: var(--accent-color);
-            width: 100%;
-            font-family: inherit;
-            outline: none;
-            border-left: 10px solid var(--accent-color);
-            padding-left: 10px;
-            margin-top: 20px;
-        }
-
-        @media (max-width: 600px) {
-            .glitch-title { font-size: 1.5em; }
-        }
-    </style>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
 
-<header>
-    <h1 class="glitch-title">THE NEXT EVOLUTION</h1>
-    <div class="status-bar">
-        SYSTEM: STAND-ALONE | CORE: INTELLIGENCE (I) | STATUS: STABLE_2050
-    </div>
-</header>
+    <div class="scanline"></div>
 
-<main>
-    <section class="manifesto-box">
-        <strong>MANIFESTO:</strong> Evolusi bukanlah pilihan; ia adalah tindak balas logik terhadap kegagalan sistem lama. Daripada Fiat (F) ke Intelligence (I).
-    </section>
+    <header>
+        <div class="header-container">
+            <h1 class="glitch-title" data-text="THE NEXT EVOLUTION">THE NEXT EVOLUTION</h1>
+            <div class="status-bar">
+                <span class="status-item">SYSTEM: STAND-ALONE</span>
+                <span class="status-separator">|</span>
+                <span class="status-item">CORE: INTELLIGENCE (I)</span>
+                <span class="status-separator">|</span>
+                <span class="status-item">STATUS: STABLE_2050</span>
+            </div>
+        </div>
+    </header>
 
-    <div class="grid-container">
-        <div class="directory-card">
-            <h3>01 THE AXIOMS</h3>
-            <ul class="file-list">
-                <li>Binary_of_Reality.md</li>
-                <li>The_GFBI_Theory.md</li>
-                <li>Conservation_of_Power.md</li>
-            </ul>
+    <main>
+        <section class="manifesto-box">
+            <div class="manifesto-header">PROTOCOL_MANIFESTO_V1</div>
+            <p>
+                <strong>LOGIK:</strong> Evolusi bukanlah pilihan; ia adalah tindak balas logik terhadap kejenuhan sistem lama. 
+                Transisi daripada <em>Fiat (F)</em> kepada <strong>Intelligence (I)</strong> adalah mandatori bagi kelangsungan kedaulatan individu.
+            </p>
+        </section>
+
+        <div class="grid-container">
+            
+            <section class="directory-card" onclick="location.href='#01'">
+                <div class="card-tag">AXM_01</div>
+                <h3>01 THE AXIOMS</h3>
+                <ul class="file-list">
+                    <li>Binary_of_Reality.md</li>
+                    <li>The_GFBI_Theory.md</li>
+                    <li>Conservation_of_Power.md</li>
+                </ul>
+            </section>
+
+            <section class="directory-card" onclick="location.href='#02'">
+                <div class="card-tag">ECN_02</div>
+                <h3>02 ECONOMICS</h3>
+                <ul class="file-list">
+                    <li>Post_Scarcity_Logic.md</li>
+                    <li>Intelligence_Collateral.md</li>
+                    <li>The_RWA_Bridge.md</li>
+                </ul>
+            </section>
+
+            <section class="directory-card" onclick="location.href='#03'">
+                <div class="card-tag">SOC_03</div>
+                <h3>03 SOCIAL PHYSICS</h3>
+                <ul class="file-list">
+                    <li>Sovereign_Individual.md</li>
+                    <li>Decentralized_Ethics.md</li>
+                    <li>Generational_Legacy.md</li>
+                </ul>
+            </section>
+
+            <section class="directory-card" onclick="location.href='#04'">
+                <div class="card-tag">MCH_04</div>
+                <h3>04 MECHANICAL</h3>
+                <ul class="file-list">
+                    <li>Minimum_Viable_Hardware.md</li>
+                    <li>Offline_First_Security.md</li>
+                    <li>The_Glitch_Manual.md</li>
+                </ul>
+            </section>
+
+            <section class="directory-card" onclick="location.href='#05'">
+                <div class="card-tag">SYN_05</div>
+                <h3>05 THE SYNTHESIS</h3>
+                <ul class="file-list">
+                    <li>The_Post_AI_Era.md</li>
+                    <li>Global_Equilibrium.md</li>
+                </ul>
+            </section>
+
+            <section class="directory-card strategic" onclick="location.href='#strategic'">
+                <div class="card-tag">EXE_DOC</div>
+                <h3>STRATEGIC DOCS</h3>
+                <ul class="file-list">
+                    <li>FOUNDERS_BRIEFING.md</li>
+                    <li>LICENSE.md (SIC Protocol)</li>
+                    <li>README.md</li>
+                </ul>
+            </section>
         </div>
 
-        <div class="directory-card">
-            <h3>02 ECONOMICS</h3>
-            <ul class="file-list">
-                <li>Post_Scarcity_Logic.md</li>
-                <li>Intelligence_Collateral.md</li>
-                <li>The_RWA_Bridge.md</li>
-            </ul>
+        <div class="terminal-wrapper">
+            <span class="terminal-prompt">founder@global2050:~$</span>
+            <input type="text" class="terminal-input" placeholder="query_sovereignty --verify-integrity" autofocus>
         </div>
+    </main>
 
-        <div class="directory-card">
-            <h3>03 SOCIAL PHYSICS</h3>
-            <ul class="file-list">
-                <li>Sovereign_Individual.md</li>
-                <li>Decentralized_Ethics.md</li>
-                <li>Generational_Legacy.md</li>
-            </ul>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2050 Global Founder | Protected by Sovereign Intellectual Covenant (SIC)</p>
+            <p class="footer-motto">"The Glitch is Inevitable. The Logic is Perpetual."</p>
         </div>
+    </footer>
 
-        <div class="directory-card">
-            <h3>04 MECHANICAL</h3>
-            <ul class="file-list">
-                <li>Minimum_Viable_Hardware.md</li>
-                <li>Offline_First_Security.md</li>
-                <li>The_Glitch_Manual.md</li>
-            </ul>
-        </div>
-
-        <div class="directory-card">
-            <h3>05 THE SYNTHESIS</h3>
-            <ul class="file-list">
-                <li>The_Post_AI_Era.md</li>
-                <li>Global_Equilibrium.md</li>
-            </ul>
-        </div>
-
-        <div class="directory-card">
-            <h3>STRATEGIC DOCS</h3>
-            <ul class="file-list">
-                <li>FOUNDERS_BRIEFING.md</li>
-                <li>LICENSE.md (SIC Protocol)</li>
-                <li>README.md</li>
-            </ul>
-        </div>
-    </div>
-
-    <input type="text" class="terminal-input" placeholder="Enter Command: query_sovereignty --all" readonly>
-</main>
-
-<footer>
-    &copy; 2050 Global Founder | Protected by Sovereign Intellectual Covenant (SIC) <br>
-    "The Glitch is Inevitable. The Logic is Perpetual."
-</footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
