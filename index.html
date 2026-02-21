@@ -9,6 +9,41 @@
     <link rel="stylesheet" href="style.css">
     
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <style>
+        /* Tambahan CSS Inline untuk memastikan kestabilan terminal */
+        .terminal-wrapper {
+            background: rgba(0, 20, 0, 0.9);
+            border: 1px solid #00ff41;
+            padding: 15px;
+            margin-top: 30px;
+            font-family: 'Courier New', Courier, monospace;
+            box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
+        }
+        .terminal-line-container {
+            max-height: 200px;
+            overflow-y: auto;
+            margin-bottom: 10px;
+        }
+        .terminal-input-row {
+            display: flex;
+            align-items: center;
+        }
+        .terminal-input {
+            background: transparent;
+            border: none;
+            color: #00ff41;
+            font-family: inherit;
+            font-size: 1rem;
+            outline: none;
+            flex: 1;
+        }
+        .terminal-prompt {
+            color: #00ff41;
+            margin-right: 10px;
+            white-space: nowrap;
+        }
+    </style>
 </head>
 <body>
 
@@ -38,7 +73,7 @@
 
         <div class="grid-container">
             
-            <section class="directory-card" onclick="location.href='#01'">
+            <section class="directory-card" id="01">
                 <div class="card-tag">AXM_01</div>
                 <h3>01 THE AXIOMS</h3>
                 <ul class="file-list">
@@ -48,7 +83,7 @@
                 </ul>
             </section>
 
-            <section class="directory-card" onclick="location.href='#02'">
+            <section class="directory-card" id="02">
                 <div class="card-tag">ECN_02</div>
                 <h3>02 ECONOMICS</h3>
                 <ul class="file-list">
@@ -58,7 +93,7 @@
                 </ul>
             </section>
 
-            <section class="directory-card" onclick="location.href='#03'">
+            <section class="directory-card" id="03">
                 <div class="card-tag">SOC_03</div>
                 <h3>03 SOCIAL PHYSICS</h3>
                 <ul class="file-list">
@@ -68,7 +103,7 @@
                 </ul>
             </section>
 
-            <section class="directory-card" onclick="location.href='#04'">
+            <section class="directory-card" id="04">
                 <div class="card-tag">MCH_04</div>
                 <h3>04 MECHANICAL</h3>
                 <ul class="file-list">
@@ -78,7 +113,7 @@
                 </ul>
             </section>
 
-            <section class="directory-card" onclick="location.href='#05'">
+            <section class="directory-card" id="05">
                 <div class="card-tag">SYN_05</div>
                 <h3>05 THE SYNTHESIS</h3>
                 <ul class="file-list">
@@ -87,7 +122,7 @@
                 </ul>
             </section>
 
-            <section class="directory-card strategic" onclick="location.href='#strategic'">
+            <section class="directory-card strategic" id="strategic">
                 <div class="card-tag">EXE_DOC</div>
                 <h3>STRATEGIC DOCS</h3>
                 <ul class="file-list">
@@ -99,8 +134,12 @@
         </div>
 
         <div class="terminal-wrapper">
-            <span class="terminal-prompt">founder@global2050:~$</span>
-            <input type="text" class="terminal-input" placeholder="query_sovereignty --verify-integrity" autofocus>
+            <div class="terminal-line-container">
+                </div>
+            <div class="terminal-input-row">
+                <span class="terminal-prompt">founder@global2050:~$</span>
+                <input type="text" class="terminal-input" placeholder="taip help..." autofocus>
+            </div>
         </div>
     </main>
 
@@ -112,5 +151,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
