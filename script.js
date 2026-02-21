@@ -1,20 +1,21 @@
 /**
  * 📟 SOVEREIGN LOGIC ENGINE (v.2050.1)
  * File: script.js
- * Function: Terminal Command Processor & System Integrity Validation
- * Principles: Minimalist, Client-Side, Stand-alone
+ * Function: Terminal Processor & Auto-Automation Click-to-PDF
+ * Architected by: Global 2050 Founder
  */
 
 document.addEventListener('DOMContentLoaded', () => {
     const terminalInput = document.querySelector('.terminal-input');
     const terminalWrapper = document.querySelector('.terminal-wrapper');
     const cards = document.querySelectorAll('.directory-card');
+    const fileItems = document.querySelectorAll('.file-list li');
 
     // Senarai Arahan (Command Registry) - GOLD MASTER VERSION
     const COMMANDS = {
         'help': 'Available commands: help, status, verify, list, view --pdf, clear, founder --bio',
         'status': 'SYSTEM: STAND-ALONE | CORE: INTELLIGENCE (I) | UPTIME: INDEFINITE',
-        'view --pdf': 'OPENING_PDF_PROTOCOL', // Trigger internal untuk akses dokumen
+        'view --pdf': 'OPENING_PDF_PROTOCOL',
         'verify': 'Integrity Check: 100% Secure. ES-RFS Protocol active.',
         'list': 'Directories: 01_Axioms, 02_Economics, 03_Social, 04_Mechanical, 05_Synthesis',
         'founder --bio': 'Architect of the Next Evolution. Visionary for Global 2050.',
@@ -22,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     /**
-     * Fungsi untuk memproses arahan (Command Processor)
+     * Fungsi Utama Memproses Arahan
      */
     function processCommand(input) {
         const cmd = input.toLowerCase().trim();
@@ -30,14 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (COMMANDS[cmd]) {
             response = COMMANDS[cmd];
-            
-            // Logik Khas: Protokol Pembukaan PDF
             if (response === 'OPENING_PDF_PROTOCOL') {
-                displayResponse(cmd, "Initiating Sovereign Document Protocol... Opening MASTER_DOCUMENT.pdf in new tab.");
-                setTimeout(() => {
-                    // Membuka fail PDF di tab baru. Pastikan MASTER_DOCUMENT.pdf ada di folder yang sama.
-                    window.open('MASTER_DOCUMENT.pdf', '_blank');
-                }, 1000);
+                launchPDF(cmd);
                 return;
             }
         } else if (cmd === "") {
@@ -45,15 +40,24 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             response = `Command not found: ${cmd}. Type 'help' for options.`;
         }
-
         displayResponse(cmd, response);
     }
 
     /**
-     * Fungsi untuk memaparkan output pada terminal (UI Renderer)
+     * Protokol Pelancaran PDF (Automation Logic)
+     */
+    function launchPDF(commandSource) {
+        displayResponse(commandSource, "Initiating Sovereign Document Protocol... Opening MASTER_DOCUMENT.pdf");
+        setTimeout(() => {
+            // Membuka fail PDF di tab baru
+            window.open('MASTER_DOCUMENT.pdf', '_blank');
+        }, 800);
+    }
+
+    /**
+     * UI Renderer: Memaparkan output pada terminal
      */
     function displayResponse(cmd, response) {
-        // Logik Khas: Membersihkan Skrin
         if (response === 'CLEAR_SCREEN') {
             const lines = document.querySelectorAll('.terminal-line');
             lines.forEach(line => line.remove());
@@ -65,29 +69,28 @@ document.addEventListener('DOMContentLoaded', () => {
         line.className = 'terminal-line';
         line.style.fontSize = '0.85rem';
         line.style.margin = '5px 0';
-        line.style.color = '#008f11'; // Warna sekunder (hijau malap)
+        line.style.color = '#008f11'; // Hijau Malap
         
-        // Memasukkan format arahan dan maklum balas sistem
+        // Gabungan visual arahan dan maklum balas
         line.innerHTML = `<span style="color: #00ff41;">> ${cmd}</span><br>${response}`;
         
-        // Memasukkan baris baru sebelum bar input
         terminalWrapper.insertBefore(line, terminalInput.parentElement);
         terminalInput.value = "";
         
-        // Auto-scroll ke bawah secara automatik untuk keselesaan pengguna
+        // Auto-scroll untuk keselesaan pengguna
         window.scrollTo(0, document.body.scrollHeight);
     }
 
-    // Event Listener: Mengesan punat 'Enter' pada terminal
+    // --- EVENT LISTENERS ---
+
+    // 1. Input Terminal (Keyboard)
     terminalInput.addEventListener('keydown', (e) => {
         if (e.key === 'Enter') {
             processCommand(terminalInput.value);
         }
     });
 
-    /**
-     * Interaktiviti Kad: Klik untuk "Simulasi" pembukaan direktori
-     */
+    // 2. Interaktiviti Kad (Simulasi Direktori)
     cards.forEach(card => {
         card.addEventListener('click', () => {
             const h3Element = card.querySelector('h3');
@@ -97,20 +100,32 @@ document.addEventListener('DOMContentLoaded', () => {
             terminalInput.focus();
             terminalInput.value = `access --dir "${dirName}"`;
             
-            // Simulasi kesan visual pada kad (Visual Feedback)
             card.style.borderColor = '#00ff41';
             setTimeout(() => {
                 card.style.borderColor = '';
-                processCommand(`Accessing ${dirName}... Authorized.`);
+                displayResponse("system", `Accessing ${dirName}... Authorized.`);
             }, 500);
         });
     });
 
-    // Urutan But Sistem (Boot Sequence) - Diagnostics Only
+    // 3. Automasi Klik Fail .MD (Direct PDF Access)
+    fileItems.forEach(item => {
+        item.style.cursor = "pointer"; 
+        item.addEventListener('click', (e) => {
+            e.stopPropagation(); // Menghalang 'click' daripada mencetuskan event pada kad
+            const fileName = item.innerText;
+            
+            // Log ke terminal dan terus buka PDF
+            displayResponse("access", `Encrypted file identified: ${fileName}. Opening Master PDF...`);
+            launchPDF("auto-load");
+        });
+    });
+
+    // --- BOOT SEQUENCE DIAGNOSTICS ---
     console.log("-----------------------------------------");
     console.log("INITIALIZING SOVEREIGN_OS_2050...");
     console.log("INTEGRITY CHECK... OK");
-    console.log("PDF_VIEW_PROTOCOL... LOADED");
-    console.log("STAND-ALONE MODE ACTIVE.");
+    console.log("AUTO-PDF_PROTOCOL... ACTIVE");
+    console.log("STAND-ALONE MODE READY.");
     console.log("-----------------------------------------");
 });
